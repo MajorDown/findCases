@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <script defer src="findCases.js"></script>
+    <title>Find Cases</title>
+</head> 
+<body>
+    <section id="findCases">
+        <div id="appTitle">- Find Cases -</div>
+        <div id="Form">
+            <label for="root">Fondamentale : 
+                <select name="root" id="root">
+                    <option selected value="C">C</option>
+                    <option value="C#">C#</option>
+                    <option value="D">D</option>
+                    <option value="D#">D#</option>
+                    <option value="E">E</option>
+                    <option value="F">F</option>
+                    <option value="F#">F#</option>
+                    <option value="G">G</option>
+                    <option value="G#">G#</option>
+                    <option value="A">A</option>
+                    <option value="A#">A#</option>
+                    <option value="B">B</option>
+                </select>
+            </label>
+            <label for="mode">Mode : 
+                <select name="mode" id="mode">
+                    <option value="eolien">Eolien (Mineur)</option>
+                    <option value="ionien">Ionien (Majeur)</option>
+                </select>
+            </label>
+            <button id="btn">Ajouter des cases</button>
+            <button id="reload">Retirer les cases</button>
+
+        </div>
+        <div id="stringsTune">
+            <select id="str6">
+                <option selected value="E">E</option>
+                <option value="F">F</option>
+                <option value="F#">F#</option>
+                <option value="G">G</option>
+                <option value="G#">G#</option>
+                <option value="A">A</option>
+                <option value="A#">A#</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="C#">C#</option>
+                <option value="D">D</option>
+                <option value="D#">D#</option>
+            </select>
+            <select id="str5">
+                <option value="E">E</option>
+                <option value="F">F</option>
+                <option value="F#">F#</option>
+                <option value="G">G</option>
+                <option value="G#">G#</option>
+                <option value="A">A</option>
+                <option value="A#">A#</option>
+                <option selected value="B">B</option>
+                <option value="C">C</option>
+                <option value="C#">C#</option>
+                <option value="D">D</option>
+                <option value="D#">D#</option>
+            </select>
+            <select id="str4">
+                <option value="E">E</option>
+                <option value="F">F</option>
+                <option value="F#">F#</option>
+                <option selected value="G">G</option>
+                <option value="G#">G#</option>
+                <option value="A">A</option>
+                <option value="A#">A#</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="C#">C#</option>
+                <option value="D">D</option>
+                <option value="D#">D#</option>
+            </select>
+            <select id="str3">
+                <option value="E">E</option>
+                <option value="F">F</option>
+                <option value="F#">F#</option>
+                <option value="G">G</option>
+                <option value="G#">G#</option>
+                <option value="A">A</option>
+                <option value="A#">A#</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="C#">C#</option>
+                <option selected value="D">D</option>
+                <option value="D#">D#</option>
+            </select>
+            <select id="str2">
+                <option value="E">E</option>
+                <option value="F">F</option>
+                <option value="F#">F#</option>
+                <option value="G">G</option>
+                <option value="G#">G#</option>
+                <option selected value="A">A</option>
+                <option value="A#">A#</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="C#">C#</option>
+                <option value="D">D</option>
+                <option value="D#">D#</option>
+            </select>
+            <select id="str1">
+                <option selected value="E">E</option>
+                <option value="F">F</option>
+                <option value="F#">F#</option>
+                <option value="G">G</option>
+                <option value="G#">G#</option>
+                <option value="A">A</option>
+                <option value="A#">A#</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="C#">C#</option>
+                <option value="D">D</option>
+                <option value="D#">D#</option>
+            </select>
+        </div>
+        <div id="fretBoard">
+            <div id="s6c0" class="s6 c0"></div><div id="s6c1" class="s6 c1"></div><div id="s6c2" class="s6 c2"></div><div id="s6c3" class="s6 c3"></div><div id="s6c4" class="s6 c4"></div><div id="s6c5" class="s6 c5"></div><div id="s6c6" class="s6 c6"></div><div id="s6c7" class="s6 c7"></div><div id="s6c8" class="s6 c8"></div><div id="s6c9" class="s6 c9"></div><div id="s6c10" class="s6 c10"></div><div id="s6c11" class="s6 c11"></div><div id="s6c12" class="s6 c12"></div>
+            <div id="s5c0" class="s5 c0"></div><div id="s5c1" class="s5 c1"></div><div id="s5c2" class="s5 c2"></div><div id="s5c3" class="s5 c3"></div><div id="s5c4" class="s5 c4"></div><div id="s5c5" class="s5 c5"></div><div id="s5c6" class="s5 c6"></div><div id="s5c7" class="s5 c7"></div><div id="s5c8" class="s5 c8"></div><div id="s5c9" class="s5 c9"></div><div id="s5c10" class="s5 c10"></div><div id="s5c11" class="s5 c11"></div><div id="s5c12" class="s5 c12"></div>
+            <div id="s4c0" class="s4 c0"></div><div id="s4c1" class="s4 c1"></div><div id="s4c2" class="s4 c2"></div><div id="s4c3" class="s4 c3"></div><div id="s4c4" class="s4 c4"></div><div id="s4c5" class="s4 c5"></div><div id="s4c6" class="s4 c6"></div><div id="s4c7" class="s4 c7"></div><div id="s4c8" class="s4 c8"></div><div id="s4c9" class="s4 c9"></div><div id="s4c10" class="s4 c10"></div><div id="s4c11" class="s4 c11"></div><div id="s4c12" class="s4 c12"></div>
+            <div id="s3c0" class="s3 c0"></div><div id="s3c1" class="s3 c1"></div><div id="s3c2" class="s3 c2"></div><div id="s3c3" class="s3 c3"></div><div id="s3c4" class="s3 c4"></div><div id="s3c5" class="s3 c5"></div><div id="s3c6" class="s3 c6"></div><div id="s3c7" class="s3 c7"></div><div id="s3c8" class="s3 c8"></div><div id="s3c9" class="s3 c9"></div><div id="s3c10" class="s3 c10"></div><div id="s3c11" class="s3 c11"></div><div id="s3c12" class="s3 c12"></div>
+            <div id="s2c0" class="s2 c0"></div><div id="s2c1" class="s2 c1"></div><div id="s2c2" class="s2 c2"></div><div id="s2c3" class="s2 c3"></div><div id="s2c4" class="s2 c4"></div><div id="s2c5" class="s2 c5"></div><div id="s2c6" class="s2 c6"></div><div id="s2c7" class="s2 c7"></div><div id="s2c8" class="s2 c8"></div><div id="s2c9" class="s2 c9"></div><div id="s2c10" class="s2 c10"></div><div id="s2c11" class="s2 c11"></div><div id="s2c12" class="s2 c12"></div>
+            <div id="s1c0" class="s1 c0"></div><div id="s1c1" class="s1 c1"></div><div id="s1c2" class="s1 c2"></div><div id="s1c3" class="s1 c3"></div><div id="s1c4" class="s1 c4"></div><div id="s1c5" class="s1 c5"></div><div id="s1c6" class="s1 c6"></div><div id="s1c7" class="s1 c7"></div><div id="s1c8" class="s1 c8"></div><div id="s1c9" class="s1 c9"></div><div id="s1c10" class="s1 c10"></div><div id="s1c11" class="s1 c11"></div><div id="s1c12" class="s1 c12"></div>
+        </div>
+    </section> 
+</body>
+</html>

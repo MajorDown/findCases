@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
+:root {
+    --app-white: #f7e7c0;
+    --app-black: #052022;
+    --app-grey: #477375;
+}
+
+#findCases {
+    width: 700px;
+    height: 375px;
+    background: var(--app-black);
+    border-radius: 10px;
+    border: solid 3px var(--app-grey);
+    display: flex;
+    flex-wrap: wrap;
+    color: var(--app-white);
+}
+
+#appTitle {
+    width: 100%;
+    height: 10%;
+    border-radius: 10px;
+    border-bottom: solid 3px var(--app-grey);
+    text-align: center;
+    font-family: 'Rock Salt', cursive;
+    color: var(--app-white);
+}
+
+#Form {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#Form select {
+    background-color: var(--app-black);
+    color: var(--app-white);
+}
+#root{
+    width: 40px;
+}
+#mode {
+    width: 150px;
+}
+button {
+    width: 130px;
+    height: 40px;
+    background: var(--app-grey);
+    color: var(--app-white);
+    border-radius: 10px;
+    border: solid var(--app-white) 3px;
+}
+
+#stringsTune {
+    padding: 12px 5px 0px 0px;
+    width: 10%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0px;
+}
+
+#stringsTune select {
+    width: 50px;
+    height: 30px;
+    background-color: var(--app-black);
+    color: var(--app-white);
+}
+
+#fretBoard {
+    width: 620px;
+    height: 200px;
+    background: url(img/fretboard.png);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#fretBoard div {
+    width: 22px;
+    height: 22px;
+}
+
+.d1 {background: url(img/bgFondamental.png)}
+.d2, .d3, .d4, .d5, .d6, .d7, .d8 {background: url(img/bgHarmonic.png)}
+
+.s6 {margin-top: 13px}
+.s5 {margin-top: 0px}
+.s4 {margin-top: 0px}
+.s3 {margin-top: 0px}
+.s2 {margin-top: 0px}
+.s1 {margin-top: 0px; margin-bottom: 5px}
+
+.c0 {margin-left:0px}
+.c1 {margin-left:28px}
+.c2 {margin-left:36px}
+.c3 {margin-left:33px}
+.c4 {margin-left:31px}
+.c5 {margin-left:29px}
+.c6 {margin-left:27px}
+.c7 {margin-left:25px}
+.c8 {margin-left:23px}
+.c9 {margin-left:21px}
+.c10 {margin-left:19px}
+.c11 {margin-left:17px}
+.c12 {margin-left:15px; margin-right: 20px}
